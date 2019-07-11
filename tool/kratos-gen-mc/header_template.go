@@ -19,10 +19,10 @@ import (
 	{{if .UseStrConv}}"strconv"{{end}}
 	{{if .EnableBatch }}"sync"{{end}}
 NEWLINE
-	"github.com/bilibili/kratos/pkg/stat/prom"
-	{{if .UseMemcached }}"github.com/bilibili/kratos/pkg/cache/memcache"{{end}}
-	{{if .EnableBatch }}"github.com/bilibili/kratos/pkg/sync/errgroup"{{end}}
-	"github.com/bilibili/kratos/pkg/log"
+	"github.com/clia/kratos/pkg/stat/prom"
+	{{if .UseMemcached }}"github.com/clia/kratos/pkg/cache/memcache"{{end}}
+	{{if .EnableBatch }}"github.com/clia/kratos/pkg/sync/errgroup"{{end}}
+	"github.com/clia/kratos/pkg/log"
 	{{.ImportPackage}}
 )
 

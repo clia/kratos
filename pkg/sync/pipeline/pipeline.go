@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bilibili/kratos/pkg/net/metadata"
-	xtime "github.com/bilibili/kratos/pkg/time"
+	"github.com/clia/kratos/pkg/net/metadata"
+	xtime "github.com/clia/kratos/pkg/time"
 )
 
 // ErrFull channel full error

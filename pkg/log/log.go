@@ -8,8 +8,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/bilibili/kratos/pkg/conf/env"
-	"github.com/bilibili/kratos/pkg/stat/prom"
+	"github.com/clia/kratos/pkg/conf/env"
+	"github.com/clia/kratos/pkg/stat/prom"
 )
 
 // Config log config.

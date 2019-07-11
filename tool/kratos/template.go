@@ -74,8 +74,8 @@ import (
 
 	"{{.ModuleName}}/internal/server/http"
 	"{{.ModuleName}}/internal/service"
-	"github.com/bilibili/kratos/pkg/conf/paladin"
-	"github.com/bilibili/kratos/pkg/log"
+	"github.com/clia/kratos/pkg/conf/paladin"
+	"github.com/clia/kratos/pkg/log"
 )
 
 func main() {
@@ -125,8 +125,8 @@ import (
 	"{{.ModuleName}}/internal/server/grpc"
 	"{{.ModuleName}}/internal/server/http"
 	"{{.ModuleName}}/internal/service"
-	"github.com/bilibili/kratos/pkg/conf/paladin"
-	"github.com/bilibili/kratos/pkg/log"
+	"github.com/clia/kratos/pkg/conf/paladin"
+	"github.com/clia/kratos/pkg/log"
 )
 
 func main() {
@@ -181,12 +181,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/bilibili/kratos/pkg/cache/memcache"
-	"github.com/bilibili/kratos/pkg/cache/redis"
-	"github.com/bilibili/kratos/pkg/conf/paladin"
-	"github.com/bilibili/kratos/pkg/database/sql"
-	"github.com/bilibili/kratos/pkg/log"
-	xtime "github.com/bilibili/kratos/pkg/time"
+	"github.com/clia/kratos/pkg/cache/memcache"
+	"github.com/clia/kratos/pkg/cache/redis"
+	"github.com/clia/kratos/pkg/conf/paladin"
+	"github.com/clia/kratos/pkg/database/sql"
+	"github.com/clia/kratos/pkg/log"
+	xtime "github.com/clia/kratos/pkg/time"
 )
 
 // Dao dao interface
@@ -285,7 +285,7 @@ import (
 	"context"
 
 	"{{.ModuleName}}/internal/dao"
-	"github.com/bilibili/kratos/pkg/conf/paladin"
+	"github.com/clia/kratos/pkg/conf/paladin"
 )
 
 // Service service.
@@ -326,7 +326,7 @@ import (
 
 	pb "{{.ModuleName}}/api"
 	"{{.ModuleName}}/internal/dao"
-	"github.com/bilibili/kratos/pkg/conf/paladin"
+	"github.com/clia/kratos/pkg/conf/paladin"
 
 	"github.com/golang/protobuf/ptypes/empty"
 )
@@ -384,9 +384,9 @@ import (
 	"{{.ModuleName}}/internal/model"
 	"{{.ModuleName}}/internal/service"
 
-	"github.com/bilibili/kratos/pkg/conf/paladin"
-	"github.com/bilibili/kratos/pkg/log"
-	bm "github.com/bilibili/kratos/pkg/net/http/blademaster"
+	"github.com/clia/kratos/pkg/conf/paladin"
+	"github.com/clia/kratos/pkg/log"
+	bm "github.com/clia/kratos/pkg/net/http/blademaster"
 )
 
 var (
@@ -446,9 +446,9 @@ import (
 	"{{.ModuleName}}/internal/model"
 	"{{.ModuleName}}/internal/service"
 
-	"github.com/bilibili/kratos/pkg/conf/paladin"
-	"github.com/bilibili/kratos/pkg/log"
-	bm "github.com/bilibili/kratos/pkg/net/http/blademaster"
+	"github.com/clia/kratos/pkg/conf/paladin"
+	"github.com/clia/kratos/pkg/log"
+	bm "github.com/clia/kratos/pkg/net/http/blademaster"
 )
 
 var (
@@ -575,8 +575,8 @@ replace (
 import (
 	pb "{{.ModuleName}}/api"
 	"{{.ModuleName}}/internal/service"
-	"github.com/bilibili/kratos/pkg/conf/paladin"
-	"github.com/bilibili/kratos/pkg/net/rpc/warden"
+	"github.com/clia/kratos/pkg/conf/paladin"
+	"github.com/clia/kratos/pkg/net/rpc/warden"
 )
 
 // New new a grpc server.

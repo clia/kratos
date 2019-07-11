@@ -1,10 +1,10 @@
 package sql
 
 import (
-	"github.com/bilibili/kratos/pkg/log"
-	"github.com/bilibili/kratos/pkg/net/netutil/breaker"
-	"github.com/bilibili/kratos/pkg/stat"
-	"github.com/bilibili/kratos/pkg/time"
+	"github.com/clia/kratos/pkg/log"
+	"github.com/clia/kratos/pkg/net/netutil/breaker"
+	"github.com/clia/kratos/pkg/stat"
+	"github.com/clia/kratos/pkg/time"
 
 	// database driver
 	_ "github.com/go-sql-driver/mysql"

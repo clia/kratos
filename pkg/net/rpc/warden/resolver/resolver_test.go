@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bilibili/kratos/pkg/naming"
+	"github.com/clia/kratos/pkg/naming"
 )
 
 func Test_FilterLittle(t *testing.T) {

@@ -23,8 +23,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/bilibili/kratos/pkg/stat/prom"
-	"github.com/bilibili/kratos/pkg/sync/errgroup"
+	"github.com/clia/kratos/pkg/stat/prom"
+	"github.com/clia/kratos/pkg/sync/errgroup"
 )
 
 var _ _bts

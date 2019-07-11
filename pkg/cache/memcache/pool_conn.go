@@ -6,8 +6,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/bilibili/kratos/pkg/container/pool"
-	"github.com/bilibili/kratos/pkg/stat"
+	"github.com/clia/kratos/pkg/container/pool"
+	"github.com/clia/kratos/pkg/stat"
 )
 
 var stats = stat.Cache

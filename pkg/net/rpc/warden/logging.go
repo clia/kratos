@@ -9,10 +9,10 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/peer"
 
-	"github.com/bilibili/kratos/pkg/ecode"
-	"github.com/bilibili/kratos/pkg/log"
-	"github.com/bilibili/kratos/pkg/net/metadata"
-	"github.com/bilibili/kratos/pkg/stat"
+	"github.com/clia/kratos/pkg/ecode"
+	"github.com/clia/kratos/pkg/log"
+	"github.com/clia/kratos/pkg/net/metadata"
+	"github.com/clia/kratos/pkg/stat"
 )
 
 var (

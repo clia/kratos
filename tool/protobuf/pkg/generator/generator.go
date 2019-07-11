@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bilibili/kratos/tool/protobuf/pkg/gen"
-	"github.com/bilibili/kratos/tool/protobuf/pkg/naming"
-	"github.com/bilibili/kratos/tool/protobuf/pkg/typemap"
-	"github.com/bilibili/kratos/tool/protobuf/pkg/utils"
+	"github.com/clia/kratos/tool/protobuf/pkg/gen"
+	"github.com/clia/kratos/tool/protobuf/pkg/naming"
+	"github.com/clia/kratos/tool/protobuf/pkg/typemap"
+	"github.com/clia/kratos/tool/protobuf/pkg/utils"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
 	"github.com/pkg/errors"
@@ -22,8 +22,8 @@ import (
 
 const Version = "v0.1"
 
-var GoModuleImportPath = "github.com/bilibili/kratos"
-var GoModuleDirName = "github.com/bilibili/kratos"
+var GoModuleImportPath = "github.com/clia/kratos"
+var GoModuleDirName = "github.com/clia/kratos"
 
 type Base struct {
 	Reg *typemap.Registry

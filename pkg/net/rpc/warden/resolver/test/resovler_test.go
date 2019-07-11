@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bilibili/kratos/pkg/conf/env"
-	"github.com/bilibili/kratos/pkg/naming"
-	"github.com/bilibili/kratos/pkg/net/netutil/breaker"
-	"github.com/bilibili/kratos/pkg/net/rpc/warden"
-	pb "github.com/bilibili/kratos/pkg/net/rpc/warden/internal/proto/testproto"
-	"github.com/bilibili/kratos/pkg/net/rpc/warden/resolver"
-	xtime "github.com/bilibili/kratos/pkg/time"
+	"github.com/clia/kratos/pkg/conf/env"
+	"github.com/clia/kratos/pkg/naming"
+	"github.com/clia/kratos/pkg/net/netutil/breaker"
+	"github.com/clia/kratos/pkg/net/rpc/warden"
+	pb "github.com/clia/kratos/pkg/net/rpc/warden/internal/proto/testproto"
+	"github.com/clia/kratos/pkg/net/rpc/warden/resolver"
+	xtime "github.com/clia/kratos/pkg/time"
 
 	"github.com/stretchr/testify/assert"
 )

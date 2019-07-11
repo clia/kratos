@@ -1,7 +1,7 @@
 package stat
 
 import (
-	"github.com/bilibili/kratos/pkg/stat/prom"
+	"github.com/clia/kratos/pkg/stat/prom"
 )
 
 // Stat interface.

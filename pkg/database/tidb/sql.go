@@ -8,10 +8,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/bilibili/kratos/pkg/log"
-	"github.com/bilibili/kratos/pkg/naming"
-	"github.com/bilibili/kratos/pkg/net/netutil/breaker"
-	"github.com/bilibili/kratos/pkg/net/trace"
+	"github.com/clia/kratos/pkg/log"
+	"github.com/clia/kratos/pkg/naming"
+	"github.com/clia/kratos/pkg/net/netutil/breaker"
+	"github.com/clia/kratos/pkg/net/trace"
 
 	"github.com/go-sql-driver/mysql"
 	"github.com/pkg/errors"

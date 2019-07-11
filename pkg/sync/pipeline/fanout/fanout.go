@@ -6,10 +6,10 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/bilibili/kratos/pkg/log"
-	"github.com/bilibili/kratos/pkg/net/metadata"
-	"github.com/bilibili/kratos/pkg/net/trace"
-	"github.com/bilibili/kratos/pkg/stat/prom"
+	"github.com/clia/kratos/pkg/log"
+	"github.com/clia/kratos/pkg/net/metadata"
+	"github.com/clia/kratos/pkg/net/trace"
+	"github.com/clia/kratos/pkg/stat/prom"
 )
 
 var (
