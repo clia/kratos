@@ -33,7 +33,6 @@ const (
 
 var (
 	_noKickUserAgent = "blademaster"
-	clientStats      = stat.HTTPClient
 )
 
 func init() {
@@ -215,16 +214,16 @@ func (client *Client) Raw(c context.Context, req *xhttp.Request, v ...string) (b
 	brk := client.breaker.Get(uri)
 	if err = brk.Allow(); err != nil {
 		code = "breaker"
-		clientStats.Incr(uri, code)
+		_metricClientReqCodeTotal.Inc(uri, code)
 		return
 	}
 	defer client.onBreaker(brk, &err)
 	// stat
 	now := time.Now()
 	defer func() {
-		clientStats.Timing(uri, int64(time.Since(now)/time.Millisecond))
+		_metricClientReqDur.Observe(int64(time.Since(now)/time.Millisecond), uri)
 		if code != "" {
-			clientStats.Incr(uri, code)
+			_metricClientReqCodeTotal.Inc(uri, code)
 		}
 	}()
 	// get config

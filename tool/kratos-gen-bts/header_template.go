@@ -17,14 +17,16 @@ import (
 	"context"
 	{{if .EnableBatch }}"sync"{{end}}
 NEWLINE
-	"github.com/clia/kratos/pkg/stat/prom"
+	"github.com/clia/kratos/pkg/cache"
 	{{if .EnableBatch }}"github.com/clia/kratos/pkg/sync/errgroup"{{end}}
 	{{.ImportPackage}}
 NEWLINE
 	{{if .EnableSingleFlight}}	"golang.org/x/sync/singleflight" {{end}}
 )
 
-var _ _bts
+var (
+	_ _bts
+)
 {{if .EnableSingleFlight}}
 var cacheSingleFlights = [SFCOUNT]*singleflight.Group{SFINIT} 
 {{end }}

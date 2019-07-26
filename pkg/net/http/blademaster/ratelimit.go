@@ -8,15 +8,6 @@ import (
 	"github.com/clia/kratos/pkg/log"
 	limit "github.com/clia/kratos/pkg/ratelimit"
 	"github.com/clia/kratos/pkg/ratelimit/bbr"
-	"github.com/clia/kratos/pkg/stat/prom"
-)
-
-const (
-	_statName = "go_http_bbr"
-)
-
-var (
-	bbrStats = prom.New().WithState("go_http_bbr", []string{"url"})
 )
 
 // RateLimiter bbr middleware.
@@ -48,7 +39,7 @@ func (b *RateLimiter) Limit() HandlerFunc {
 		limiter := b.group.Get(uri)
 		done, err := limiter.Allow(c)
 		if err != nil {
-			bbrStats.Incr(_statName, uri)
+			_metricServerBBR.Inc(uri)
 			c.JSON(nil, err)
 			c.Abort()
 			return

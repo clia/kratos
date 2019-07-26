@@ -10,8 +10,6 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-var stats = stat.DB
-
 // Config mysql config.
 type Config struct {
 	Addr         string          // for trace

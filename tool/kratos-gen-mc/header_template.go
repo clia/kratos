@@ -19,12 +19,13 @@ import (
 	{{if .UseStrConv}}"strconv"{{end}}
 	{{if .EnableBatch }}"sync"{{end}}
 NEWLINE
-	"github.com/clia/kratos/pkg/stat/prom"
 	{{if .UseMemcached }}"github.com/clia/kratos/pkg/cache/memcache"{{end}}
 	{{if .EnableBatch }}"github.com/clia/kratos/pkg/sync/errgroup"{{end}}
 	"github.com/clia/kratos/pkg/log"
 	{{.ImportPackage}}
 )
 
-var _ _mc
+var (
+	_ _mc
+)
 `
